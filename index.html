@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>B.B's Bookshelf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-family: 'Gentium Plus', cursive;
+      font-size: 80px;
+      color: #F4A7B9
+    }
+
+    .bookshelf {
+      width: 200%;
+      max-width: 1000px;
+      height: 650px;
+      border: 30px solid #5D4037;
+      position: relative;
+      margin: 50px auto 0;
+    }
+    .shelf {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      background-color: #5D4037;
+    }
+
+    .shelf.middle {
+      top: 45%;
+      z-index:2;
+    }
+    .shelf.bottom {
+      bottom: 0;
+    }
+    .hydrangea {
+      position: absolute;
+      top: -230px; 
+      left: 20px; 
+      width: 230px;
+      z-index:1;
+    }
+    .photo-frame {
+      position: absolute;
+      top: -530%;
+      left: 43%; 
+      width: 150px;
+      height: 500%;
+      border: 20px solid #ADD8E6;
+      z-index:2;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .photo-frame-stand {
+      position: absolute;
+      bottom: 75px;
+      left: 42%;
+      transform: translateX(-50%)rotate(125deg);
+      width: 180px;
+      height: 50px; 
+      background-color: black;
+      z-index:1;
+    }
+    .vinyl-player {
+      position: absolute;
+      top: -260px;
+      right: 20px;   
+      width: 300px;
+      height:260px;
+      object-fit:cover; 
+      
+    }
+    .book-stack {
+      position: absolute;
+      bottom: 45px; 
+      left: 40px;
+    }
+
+    .book-bottom {
+      width: 160px;
+      background-color:#004d00;
+      height:34px;
+    }
+    .small-book-2 {
+      width: 195px;
+      background-color: lightpink;
+      height:37px;
+    }
+    
+    .book-middle {
+      width: 192px;
+      background-color: #800000;
+      height:30px;
+    }
+    .book-top {
+      background-color: #D4A40E;
+      width: 175px;
+      height:37px;
+    }
+    .smaller-book {
+      background-color: #003366;
+      width: 192px;
+      height:29px;
+    }
+    .candle {
+      position: absolute;
+      bottom: 45px;
+      left: 43%;
+      width: 150px;
+      height:240px;
+    }
+    
+    .leaning-book {
+      position: absolute;
+      bottom: 45px;
+      right: 210px;
+      width: 30px;
+      height: 170px;
+      background-color: #F5F5DC; 
+      transform: rotate(-15deg);
+      z-index: 3;
+    }
+    .book-stack-right {
+      position: absolute;
+      bottom: 45px;
+      right: 40px;
+      z-index: 2;
+    }
+
+    .book-right-2 {
+      width: 140px;
+      background-color: #8B0000; 
+      height: 30px;
+    }
+    .book-right-3 {
+      width: 130px;
+      background-color:  #000000;
+      height: 25px;
+    }
+    .book-right-4 {
+      width: 150px;
+      background-color: #ADD8E6;
+      height: 35px;
+    }
+    .alarm-clock {
+      position: absolute;
+      top: -150px;
+      left: 63.4%;
+      width: 150px;
+    }
+    .background-text {
+      font-family: 'Courier New', monospace;
+      font-size: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      color: #D2B48C;
+      padding: 10px;
+      box-sizing: border-box;
+      visibility: visible;
+    }
+    
+    .background-text span {
+      display: inline-block;
+      opacity: 0;
+      animation: typing 100.9s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    .background-text span {
+      opacity: 1;
+      animation: typing 20.9s steps(50) infinite, blink 3.5s step-end infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-text">
+    <span>I write to you with a respect much larger than hot air balloons and mountains, bigger than countries and the ego’s of Massachusetts men. You have written books and many essays; I write only when I must, with a begrudging hand. You lived civilly with purpose; I aim for civility but find myself running away, screaming. You advocated for abolition and anarchism, notions huger than your small body and sharp mind; everything I do, even the act of making my mom coffee in the morning, seems to be about me. It is clear, you are better, you know things about living that I don’t. But please know, I have been watching kites fly away, eating bread alone in my kitchen, listening to birds instead of singing at them, crying in shorter intervals, avoiding cars and airplanes, all these things I do, I try to find it, find you. I even sit still under red maples and wait for your Thoreauvian verve to sneak up on me, your inked hands slapping me into a consciousness. You have not come for me yet – this is why I write to you. When? When will you show me the simple, perceptual things my father would not?</span>
+    <span>I have begun to think that your deferred arrival is because you know, as do I, that your charming self-ambition and simplicity, isn’t possible anymore and maybe it never was. I don’t mean to insult or dismiss your idyllic pursuits, but did you ever think that simplicity was just ignorance, or a way to avoid calamity? I have found the most defining moments of my life, the times in which my brute strength and humor grew up and out, have always been through social disasters and very, very complicated matters.</span>
+    <span>I won’t stand by my ways as truth or precedent, because I know you know something that I don’t know. I’m sure you look at my short-term networked relationships, my fear of physical movement, the big closet of clothes I don’t wear, and shake your head with contempt and confusion. I’m sure the answer to my commotion is very obvious to you. I’ve thought about you, your pond, and your words, quite excessively, even obsessively, but my mind won’t align with your transcendentalist ideals, though I try. Maybe self-reliance is too much for my sensitive, air conditioner lungs and soft, needy hands. Maybe I am not suited as you were. That must be it.</span>
+    <span>All the same, I implore you, please be honest with me. I can take it.
+    Did you live deliberately in the woods and how did that feel?
+    No pretending.
+    I know that look.
+    Respectfully,
+    B I write to you with a respect much larger than hot air balloons and mountains, bigger than countries and the ego’s of Massachusetts men. You have written books and many essays; I write only when I must, with a begrudging hand. You lived civilly with purpose; I aim for civility but find myself running away, screaming. You advocated for abolition and anarchism, notions huger than your small body and sharp mind; everything I do, even the act of making my mom coffee in the morning, seems to be about me. It is clear, you are better, you know things about living that I don’t. But please know, I have been watching kites fly away, eating bread alone in my kitchen, listening to birds instead of singing at them, crying in shorter intervals, avoiding cars and airplanes, all these things I do, I try to find it, find you. I even sit still under red maples and wait for your Thoreauvian verve to sneak up on me, your inked hands slapping me into a consciousness. You have not come for me yet – this is why I write to you. When? When will you show me the simple, perceptual things my father would not?
+
+I have begun to think that your deferred arrival is because you know, as do I, that your charming self-ambition and simplicity, isn’t possible anymore and maybe it never was. I don’t mean to insult or dismiss your idyllic pursuits, but did you ever think that simplicity was just ignorance, or a way to avoid calamity? I have found the most defining moments of my life, the times in which my brute strength and humor grew up and out, have always been through social disasters and very, very complicated matters. 
+ 
+I won’t stand by my ways as truth or precedent, because I know you know something that I don’t know. I’m sure you look at my short-term networked relationships, my fear of physical movement, the big closet of clothes I don’t wear, and shake your head with contempt and confusion. I’m sure the answer to my commotion is very obvious to you. I’ve thought about you, your pond, and your words, quite excessively, even obsessively, but my mind won’t align with your transcendentalist ideals, though I try. Maybe self-reliance is too much for my sensitive, air conditioner lungs and soft, needy hands. Maybe I am not suited as you were. That must be it. 
+
+All the same, I implore you, please be honest with me. I can take it. 
+Did you live deliberately in the woods and how did that feel? 
+No pretending. 
+I know that look. 
+Respectfully,
+B
+</span>
+  </div>
+
+  <h1>B.B's Bookshelf</h1>
+  <div class="bookshelf">
+    <div class="shelf middle"> 
+        <img class="hydrangea" src="https://thumbs.dreamstime.com/b/blue-hydrangea-flower-bouquet-glass-vase-simple-watercolor-style-hand-drawn-illustration-isolated-white-background-clip-blue-333988591.jpg" alt="Blue Hydrangea">
+      
+      <div class="photo-frame">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1J4PcSHHUK_q_Nlr8vRDbFOCxBvc3lrR1g&s" alt="photo of berni and friends with flowercrowns on">
+      </div>
+       <img class="vinyl-player" src="https://victrola.com/cdn/shop/files/JourneyRed_700x700.jpg?v=1712151443" alt="Red Vinyl Player">
+        <div class="photo-frame-stand"></div>
+  </div>
+    <div class="shelf bottom">
+      <img class="alarm-clock" src="https://m.media-amazon.com/images/I/61+DaiZphSL.jpg" alt="Alarm clock">
+      <img class="candle" src="https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4805caa0/hires/028009437_alt_1.jpg?sh=471" alt="bath and body works pink candle">
+         <div class="book-stack">
+        <div class="book book-bottom">
+           </div>
+        <div class="book book-middle"></div> 
+        <div class="book book-top"></div>
+        <div class="smaller-book"></div>
+       <div class="small-book-2"></div>
+      </div>
+      <div class="book-stack-right">
+        <div class="book book-right-2"></div>
+        <div class="book book-right-3"></div>
+        <div class="book book-right-4"></div>
+      </div>
+      <div class="leaning-book"></div>
+    </div>
+  </div>
+</body>
+</html>
